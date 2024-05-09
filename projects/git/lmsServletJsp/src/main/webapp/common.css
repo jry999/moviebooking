@@ -1,0 +1,49 @@
+.card {
+	box-shadow: 1px 2px 10px 0px grey;
+	margin: 20px 0;
+}
+
+.container {
+	padding-top: 20px;
+}
+
+header {
+	background-color: lightgrey;
+	height: 50px;
+	font-size: larger;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#header_logo {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: baseline;
+	padding: 10px;
+}
+
+a {
+	margin-right: 10px
+}
+
+footer {
+	display:flex !important;
+	align-items:center !important;
+	justify-content:center !important;
+	color: white;
+	height: 80px;
+}
+
+.book-list{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 25%;
+}
