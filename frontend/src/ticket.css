@@ -1,0 +1,28 @@
+/* Add this CSS to achieve the cutout effect on the sides of the ticket */
+.ticket {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .ticket::before,
+  .ticket::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 0 3px #d1d5db; /* Same as border color */
+  }
+  
+  .ticket::before {
+    left: -10px;
+  }
+  
+  .ticket::after {
+    right: -10px;
+  }
+  
